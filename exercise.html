@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise</title>
+    <style>.grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 500px;
+      }
+      
+      .grid-item {
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        width: 33.33%;
+        height: 50%;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .grid-item:hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      
+      .grid-item1 {
+        background-color: #f44336;
+      }
+      
+      .grid-item2 {
+        background-color: #e91e63;
+      }
+      
+      .grid-item3 {
+        background-color: #9c27b0;
+      }
+      
+      .grid-item4 {
+        background-color: #673ab7;
+      }
+      
+      .grid-item5 {
+        background-color: #3f51b5;
+      }
+      
+      .grid-item6 {
+        background-color: #2196f3;
+      }
+
+
+      /* chest exercise*/
+      .exercise-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.exercise-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: blue;
+}
+
+.animation-container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.animation-img {
+  width: 100%;
+  height: 100%;
+}
+
+.animation-marker {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+
+.start-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #0D47A1;
+}
+
+      </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item grid-item1">
+            <div class="exercise-container">
+                <div class="exercise-title">Chest exercise</div>
+                <img src="https://www.targitfit.com/images/chest-delts-tris.jpg" alt="" width="100%" height="100%">
+               <div class="animation-container">
+                 
+                 
+                  <div class="animation-marker"></div>
+                </div>
+                <button class="start-button" onclick="startAnimation()">Start Exercise</button>
+              </div>
+              
+        </div>
+        </div>
+        <div class="grid-item grid-item2">
+          <div class="exercise-title">Back exercise</div>
+          <img src="https://i.pinimg.com/736x/7d/25/e4/7d25e4c946fa6e004b37b54a34fd8004.jpg" alt="" height="100%" width="100%">
+          
+            <div class="animation-marker"></div>
+          </div>
+          <button class="start-button" onclick="startAnimation()">Start Exercise</button>
+        </div>
+        
+          </div>
+        <div class="grid-item grid-item3">
+          <div class="exercise-title">biceps exercise</div>
+        <img src="https://i.pinimg.com/736x/48/10/8f/48108f24714a137c54ad30789e76da72.jpg" alt="" height="100%" width="100%">
+        <div class="animation-marker"></div>
+          </div>
+          <button class="start-button" onclick="backAnimation()">back Exercise</button>
+        </div>
+        </div>
+        <div class="grid-item grid-item4"> 
+          <div class="exercise-title">triceps exercise</div>
+          <img src="https://i.pinimg.com/736x/34/bd/6c/34bd6ca2e8efafd6176673212f30c041.jpg" alt="" height="100%" width="100%">
+         </div>
+        <div class="grid-item grid-item5">
+          <div class="exercise-title">shoulders exercise</div>
+          <img src="https://i.pinimg.com/736x/9a/56/0c/9a560cd17ba3868b7065a6884f071d14.jpg" alt="" height="100%" width="100%">
+         </div>
+        <div class="grid-item grid-item6">
+          <div class="exercise-title">thigh exercise</div>
+          <img src="https://i.pinimg.com/564x/6b/ec/d1/6becd1b3d2e9b1adae4524bd67617ede.jpg" alt="" height="100%" width="100%">
+         
+        </div>
+      </div>
+     
+</body>
+</html>
